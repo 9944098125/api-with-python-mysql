@@ -1,0 +1,25 @@
+#### CREATE USER
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+   "name":"Ravi Akella",
+   "email":"ravi@yopmail.com"
+}
+
+########## GET USERS
+GET http://localhost:5000/users
+Content-Type: application/json
+
+####### UPDATE USER
+PUT http://localhost:5000/users/1
+Content-Type: application/json
+
+{
+  "name":"Prasad A",
+  "email":"prasad@yopmail.com"
+}
+
+####### DELETE USER
+DELETE http://localhost:5000/users/1
+Content-Type: application/json
